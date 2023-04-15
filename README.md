@@ -8,9 +8,9 @@ Desafio de projeto em java dedicado a abstrair os conteúdos aprendidos no bootc
 <h2> Habilidades colocadas em prática</h2>
 
 <p>
-<strong>	1.</strong> Criação de relacionamentos para as classes do projeto.
-<strong>	2.</strong> Manipulação de atributos, métodos e objetos.
-<strong>	3.</strong> Utilização das ferramentas do paradigma de orientação a objetos: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO.
+<strong>	1.</strong> Criação de relacionamentos para as classes do projeto. <br>
+<strong>	2.</strong> Manipulação de atributos, métodos e objetos. <br>
+<strong>	3.</strong> Utilização das ferramentas do paradigma de orientação a objetos: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO. <br>
 </p>
 
 ----
