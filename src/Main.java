@@ -5,58 +5,58 @@ import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        //Cursos, mentoria e bootcamp
         Curso curso1 = new Curso();
-        curso1.setTitulo("curso java");
-        curso1.setDescricao("descrição curso java");
-        curso1.setCargaHoraria(8);
+        curso1.setTitulo("Curso Java");
+        curso1.setDescricao("Curso básico de programação Java");
+        curso1.setCargaHoraria(20);
 
         Curso curso2 = new Curso();
-        curso2.setTitulo("curso js");
-        curso2.setDescricao("descrição curso js");
-        curso2.setCargaHoraria(4);
+        curso2.setTitulo("Curso JavaScript");
+        curso2.setDescricao("Curso básico de programação Javascript");
+        curso2.setCargaHoraria(15);
 
         Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("mentoria de java");
-        mentoria.setDescricao("descrição mentoria java");
+        mentoria.setTitulo("JUnit");
+        mentoria.setDescricao("Explicação do framework JUnit");
         mentoria.setData(LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
-
         Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Java Developer");
-        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.setNome("Bootcamp Banco PAN Java Developer");
+        bootcamp.setDescricao("Trilha completa em Java Spring Boot oferecido pelo banco PAN em parceria com a DIO");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        //DEVS
+        Dev devLucas = new Dev();
+        devLucas.setNome("Lucas");
+        devLucas.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Lucas:" + devLucas.getConteudosInscritos());
+        devLucas.progredir();
+        devLucas.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Lucas:" + devLucas.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Lucas:" + devLucas.getConteudosConcluidos());
+        System.out.println("XP:" + devLucas.calcularTotalXp());
 
         System.out.println("-------");
 
-        Dev devJoao = new Dev();
-        devJoao.setNome("Joao");
-        devJoao.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        devJoao.progredir();
-        devJoao.progredir();
-        devJoao.progredir();
+        Dev devLuisa = new Dev();
+        devLuisa.setNome("Luisa");
+        devLuisa.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Luisa:" + devLuisa.getConteudosInscritos());
+        devLuisa.progredir();
+        devLuisa.progredir();
+        devLuisa.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
-        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
-        System.out.println("XP:" + devJoao.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Luisa:" + devLuisa.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos Luisa:" + devLuisa.getConteudosConcluidos());
+        System.out.println("XP:" + devLuisa.calcularTotalXp());
 
     }
 
